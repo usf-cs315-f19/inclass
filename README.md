@@ -1,2 +1,3 @@
 # inclass
-In class code examples.
+In class code examples by week.
+
