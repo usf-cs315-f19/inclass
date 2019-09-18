@@ -108,6 +108,13 @@ pi@rpi4:~/nt $ ./nt -b 4 -r 0,3 0x000002C9
 9 (base 10 unsigned)
 -7 (base 10 signed)
 
+pi@rpi4:~/nt $ ./nt -b 8 -r 0,7 0x000002C9
+1100 1001 (base 2)
+0b11001001 (base 2)
+0xC9 (base 16)
+201 (base 10 unsigned)
+-55 (base 10 signed)
+
 pi@rpi4:~/nt $ ./nt -b 4 -r 4,7 0x000002C9
 1100 (base 2)
 0b1100 (base 2)
