@@ -7,7 +7,6 @@ int main(int argc, char **argv)
     int r;
 
     r = add_a(1,2);
-
     printf("r = %d\n", r);
 
     return 0;
