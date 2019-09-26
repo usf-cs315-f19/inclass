@@ -1,7 +1,8 @@
-PROGS = max_main max3_main count_zeros_main
+PROGS = max_main max3_main count_zeros_main smult_main
 
 OBJS = max_c.o max_a.o max3_c.o max3_a.o \
-       count_zeros_c.o count_zeros_a.o
+       count_zeros_c.o count_zeros_a.o \
+       smult_c.o smult_a.o
 
 CFLAGS = -g
 
@@ -35,6 +36,15 @@ count_zeros_main : count_zeros_main.c count_zeros_c.o count_zeros_a.o
 	gcc ${CFLAGS} -o count_zeros_main count_zeros_main.c \
             count_zeros_c.o count_zeros_a.o
 
+smult_c.o : smult_c.c
+	gcc ${CFLAGS} -c -o smult_c.o smult_c.c
+
+smult_a.o : smult_a.s
+	as -o smult_a.o smult_a.s
+
+smult_main : smult_main.c smult_c.o smult_a.o
+	gcc ${CFLAGS} -o smult_main smult_main.c \
+            smult_c.o smult_a.o
 clean:
 	rm -rf ${PROGS} ${OBJS}
 
