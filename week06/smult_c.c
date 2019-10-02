@@ -8,3 +8,4 @@ int smult_c(int *array, int len, int s)
 
     return 0;
 }
+    
