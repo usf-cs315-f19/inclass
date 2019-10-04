@@ -16,4 +16,5 @@ main:
 
     ldr lr, [sp]
     add sp, sp, #8
+    bx lr
     .endfunc    
