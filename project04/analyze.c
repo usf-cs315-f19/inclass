@@ -33,7 +33,6 @@ int main(int argc, char **argv)
 {
     unsigned int iw;
     unsigned int *pc;
-    unsigned int opcode, rn, rd, rm, imm;
 
     /* Get the address of the first instruction of the add assembly
        function in memory. */

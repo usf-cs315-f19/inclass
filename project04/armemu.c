@@ -25,7 +25,7 @@ void arm_state_init(struct arm_state *as, unsigned int *func,
 {
     int i;
 
-    /* Zero out all arm state */
+    /* Zero out all registers */
     for (i = 0; i < NREGS; i++) {
         as->regs[i] = 0;
     }
