@@ -34,11 +34,11 @@ int cmp(struct cpsr_state *cpsr, unsigned int a, unsigned int b) {
 
     cpsr-> V = 0;
     if ((a > 0) && (b < 0)) {
-        if ((al + bl) > 0x7FFFFFFE) {
+        if ((al + bl) > 0x7FFFFFFF) {
             cpsr->V = 1;
         }
     } else if ((a < 0) && (b > 0)) {
-        if ((al + bl) > 0x7FFFFFFF) {
+        if ((al + bl) > 0x80000000) {
             cpsr->V = 1;
         }
     }
