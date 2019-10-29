@@ -32,13 +32,13 @@ int cmp(struct cpsr_state *cpsr, unsigned int a, unsigned int b) {
 
     cpsr->C = (b > a);
 
-    cpsr-> V = 0;
+    cpsr->V = 0;
     if ((as > 0) && (bs < 0)) {
-        if ((al + bl) > 0x7FFFFFFF) {
+        if ((al + (-1 * bl)) > 0x7FFFFFFF) {
             cpsr->V = 1;
         }
     } else if ((as < 0) && (bs > 0)) {
-        if ((al + bl) > 0x80000000) {
+        if (((-1 * al) + bl) > 0x80000000) {
             cpsr->V = 1;
         }
     }
@@ -112,7 +112,13 @@ int main(int argc, char **argv)
     cond_check(&cpsr, 7, 2);
 
     cmp(&cpsr, -8, -100);
-    cond_check(&cpsr, (unsigned int) -8, (unsigned int) -100);    
+    cond_check(&cpsr, (unsigned int) -8, (unsigned int) -100);
+
+    cmp(&cpsr, 4, -1);
+    cond_check(&cpsr, (unsigned int) 4, (unsigned int) -1);
+
+    cmp(&cpsr, -3, 7);
+    cond_check(&cpsr, (unsigned int) -3, (unsigned int) 7);            
     
     return 0;
 }
