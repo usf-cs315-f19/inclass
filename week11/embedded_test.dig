@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>and_subcircuit.dig</elementName>
+      <elementAttributes/>
+      <pos x="120" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes/>
+      <pos x="40" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes/>
+      <pos x="40" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes/>
+      <pos x="280" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Probe</elementName>
+      <elementAttributes/>
+      <pos x="80" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Probe</elementName>
+      <elementAttributes/>
+      <pos x="80" y="300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Probe</elementName>
+      <elementAttributes/>
+      <pos x="240" y="140"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="40" y="180"/>
+      <p2 x="80" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="180"/>
+      <p2 x="120" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="200"/>
+      <p2 x="240" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="200"/>
+      <p2 x="280" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="40" y="220"/>
+      <p2 x="80" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="220"/>
+      <p2 x="120" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="120"/>
+      <p2 x="80" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="220"/>
+      <p2 x="80" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="140"/>
+      <p2 x="240" y="200"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
