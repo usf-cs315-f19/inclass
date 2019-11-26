@@ -11,7 +11,7 @@ simple:
     sub r4, r0, r1
     cmp r0, r0
     cmp r0, r1
-    cmp r1, r2
+    cmp r1, r0
     mov r0, r2
     bx lr
 
