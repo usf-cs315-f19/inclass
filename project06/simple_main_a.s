@@ -13,5 +13,9 @@ simple:
     cmp r0, r1
     cmp r1, r0
     mov r0, r2
+    cmp r0, r0
+    beq done
+    mov r0, #99
+done:
     bx lr
 
