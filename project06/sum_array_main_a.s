@@ -5,7 +5,7 @@ main:
     str r0, [sp]
     mov r0, #2
     str r0, [sp, #4]
-    mov r1, #3
+    mov r0, #3
     str r0, [sp, #8]
     mov r0, sp
     mov r1, #3
